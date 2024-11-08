@@ -1,8 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import { useNavigate } from "react-router-dom";
 
 export default function AuthPage() {
+    const navigate = useNavigate();
+
     return (
         <div>
             <div className="my-2">
@@ -16,7 +19,9 @@ export default function AuthPage() {
             </div>
 
             <div>
-                <Button className="w-full">검색</Button>
+                <Button className="w-full" onClick={() => navigate("/mypage")}>
+                    검색
+                </Button>
             </div>
         </div>
     );

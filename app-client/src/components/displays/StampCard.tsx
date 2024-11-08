@@ -8,12 +8,20 @@ export interface StampCardProps {
     name: string;
     description?: string;
     active?: boolean;
+    onClick?: React.MouseEventHandler;
 }
 
-export const StampCard = ({ icon, name, description, active = true }: StampCardProps) => {
+export const StampCard = ({
+    icon,
+    name,
+    description,
+    active = true,
+    onClick,
+}: StampCardProps) => {
     return (
         <Card
             className={`h-[80px] border-[2px] flex m-1 px-2 items-center justify-center hover:cursor-pointer relative`}
+            onClick={onClick}
         >
             <div className="">{icon}</div>
             <CardContent className="m-2 p-0 w-full">
