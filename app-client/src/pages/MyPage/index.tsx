@@ -6,7 +6,7 @@ export default function MyPage() {
     const navigate = useNavigate();
 
     const name = "김동환";
-    const userStamp = 0;
+    // const userStamp = 0;
     const requiredStamp = 3;
     const totalStamp = 4;
 
