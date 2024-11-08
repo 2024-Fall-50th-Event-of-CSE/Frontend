@@ -1,4 +1,4 @@
-name: (get-p-client) Deploy On Netlify
+name: (knucse50th-client) Deploy On Netlify
 
 on:
     pull_request:
